@@ -30,7 +30,7 @@ import {
           ...state,
         };
       case SESSION_SUCCESS:
-        localStorage.setItem("session", payload["session_id"]);
+        localStorage.setItem("session_id", payload["session_id"]);
         return {
           ...state,
         };

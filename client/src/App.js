@@ -16,12 +16,12 @@ import { createSession } from "./actions/watson";
 // Import axios
 import axios from "axios";
 
-if (localStorage.session) {
-  delete axios.defaults.headers.common["session"];
+if (localStorage.session_id) {
+  delete axios.defaults.headers.common["session_id"];
   //localStorage.removeItem("session_id");
-  axios.defaults.headers.common["session_id"] = localStorage.session;
+  axios.defaults.headers.common["session_id"] = localStorage.session_id;
 } else {
-  delete axios.defaults.headers.common["session"];
+  delete axios.defaults.headers.common["session_id"];
 }
 
 // Connect application to redux

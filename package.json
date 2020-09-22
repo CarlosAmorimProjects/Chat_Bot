@@ -16,6 +16,7 @@
     "express": "^4.17.1",
     "ibm-watson": "^5.7.0",
     "react-icons": "^3.11.0",
+    "react-scrollable-feed": "^1.1.2",
     "reactjs-popup": "^2.0.3"
   },
   "devDependencies": {

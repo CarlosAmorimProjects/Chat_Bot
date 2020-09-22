@@ -1,6 +1,6 @@
 import React from 'react';
 
-import image from "./1.jpg";
+import image from "./Flight_dive_by_Nicolas_Silva.png"
 
 const LandingPage = () => {
     return (

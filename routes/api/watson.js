@@ -21,11 +21,11 @@ const assistant = new AssistantV2 ({
 
 router.get ("/session", async (req, res) => {
     try {
-        const session = await assistant.createSession({
+        const session_id = await assistant.createSession({
             assistantId: process.env.WATSON_ASSISTANT_ID
         });
 
-        res.json(session['result'])
+        res.json(session_id['result'])
 
     }catch(err) {
         res.send("Error processing your request");
